@@ -1,53 +1,77 @@
-# Shortcuts
-alias copyssh="pbcopy < $HOME/.ssh/id_ed25519.pub"
-alias reloadshell="source $HOME/.zshrc"
-alias reloaddns="dscacheutil -flushcache && sudo killall -HUP mDNSResponder"
-alias ll="/opt/homebrew/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-directories-first"
-alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
-alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
-alias compile="commit 'compile'"
-alias version="commit 'version'"
+#aliases
+alias myaliases='vim ~/.oh-my-zsh/custom/aliases.zsh'
 
-# Directories
-alias dotfiles="cd $DOTFILES"
-alias library="cd $HOME/Library"
-alias projects="cd $HOME/Code"
-alias sites="cd $HOME/Herd"
+alias code='cd ~/code'
 
-# Laravel
-alias a="php artisan"
-alias fresh="php artisan migrate:fresh --seed"
-alias tinker="php artisan tinker"
-alias seed="php artisan db:seed"
-alias serve="php artisan serve"
+alias pods-test-2='cd ~/dropbox/web-content/htdocs/pods-test-2'
 
-# PHP
-alias cfresh="rm -rf vendor/ composer.lock && composer i"
+alias st='open -a "Sublime Text 2.app"'
 
-# JS
-alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
-alias watch="npm run watch"
+alias dreampress='ssh wp_djnqjb@ccpdt-demo.visickdesign.com'
 
-# Docker
-alias docker-composer="docker-compose"
+alias vvv='cd ~/code/vagrant-local'
 
-# SQL Server
-alias mssql="docker run -e ACCEPT_EULA=Y -e SA_PASSWORD=LaravelWow1986! -p 1433:1433 mcr.microsoft.com/mssql/server:2017-latest"
+alias vw='cd ~/code/vagrant-local/www'
 
-# Git
-alias gst="git status"
-alias gb="git branch"
-alias gc="git checkout"
-alias gl="git log --oneline --decorate --color"
-alias amend="git add . && git commit --amend --no-edit"
-alias commit="git add . && git commit -m"
-alias diff="git diff"
-alias force="git push --force"
-alias nuke="git clean -df && git reset --hard"
-alias pop="git stash pop"
-alias pull="git pull"
-alias push="git push"
-alias resolve="git add . && git commit --no-edit"
-alias stash="git stash -u"
-alias unstage="git restore --staged ."
-alias wip="commit wip"
+alias pyatt='cd ~/code/vagrant-local/www/pyatt-studio'
+
+alias pyatt-theme='cd ~/code/vagrant-local/www/pyatt-studio/wp-content/themes/pyatt-studio'
+
+alias sentient='cd ~/code/vagrant-local/www/sentientv2'
+
+alias sentient-theme='cd ~/code/vagrant-local/www/sentientv2/wp-content/themes/sentientl2'
+
+alias ccpdt='cd ~/code/ccpdt'
+
+alias ccpdtt='cd ~/code/ccpdt/wp-content/themes/jvf-ccpdt'
+
+alias ccpdtprod='ssh dh_8str4q@ccpdt.org'
+
+alias artofdogsfprod='ssh theartofdogsf@hoodedmerganser.dreamhost.com'
+
+alias neo='cd ~/code/neorb'
+alias neot='cd ~/code/neorb/wordpress/wp-content/themes/neo4jweb'
+alias neo-compass-prod='cd ~/code/neorb/wordpress/wp-content/themes/neo4jweb/assets && rm css/app.css && compass compile --sass-dir scss --css-dir css --output-style compressed --no-line-comments'
+alias neo-compile-js='cd ~/code/neorb/wordpress/wp-content/themes/neo4jweb/assets/js && browserify app.js -o bundle.js && rm dist.min.js && cd ../../ && rake'
+
+alias neovfix='sudo kextload -b org.virtualbox.kext.VBoxDrv && sudo kextload -b org.virtualbox.kext.VBoxNetFlt && sudo kextload -b org.virtualbox.kext.VBoxNetAdp  && sudo kextload -b org.virtualbox.kext.VBoxUSB'
+
+alias alldawgsprod='ssh newa9218@alldawgs.com'
+
+alias jesusatlasprod='ssh jv_ps_jesusatlas@ps411897.dreamhostps.com'
+
+alias smartdogprod='ssh jv_ps_smartdog@smartdogtrainingandbehavior.com'
+
+alias pawzforhealthprod='ssh -p 2222 pawz4@192.254.234.206'
+
+alias melanie='cd ~/code/melaniecerone'
+alias melanie-theme='cd ~/code/melaniecerone/web/app/themes/sage'
+alias melanie-staging='ssh forge@45.55.9.168'
+
+alias nwpprod='ssh nancywe5@us123.siteground.us -p18765' 
+alias forge-staging='ssh forge@45.55.9.168'
+
+alias hs7='cd ~/Homestead7'
+
+alias sysdig2='cd ~/code/gutenberg'
+alias sysdig2-theme='cd ~/code/gutenberg/wp-content/themes/sysdig'
+alias gutenberg-plugin='cd ~/code/gutenberg/wp-content/plugins/gutenberg-dev'
+alias sysdig-blocks='cd ~/code/gutenberg/wp-content/plugins/sd-blocks'
+
+alias ohdprod='ssh jv_ps_ohd@onehappydog.com'
+
+alias sitearchives='cd ~/Dropbox/web-content/site-archives'
+alias getsfcba='cd ~/Code/getsfcba/'
+alias getsfcbat='cd ~/Code/getsfcba/wp-content/themes/getcba'
+alias sysdig="cd ~/code/sysdig"
+alias sysdigt="cd ~/code/sysdig/wp-content/themes/sysdig"
+alias strivr="cd ~/code/strivr"
+alias strivrt="cd ~/code/strivr/wp-content/themes/strivr"
+alias snaplogic="cd ~/code/snaplogic"
+alias snaplogict="cd ~/code/snaplogic/wp-content/themes/snaplogic"
+alias packetfabric="cd ~/code/packetfabric"
+alias packetfabrict="cd ~/code/packetfabric/wp-content/themes/packet-fabric"
+alias managexr="cd ~/Local\ Sites/managexr/app/public"
+alias managexrt="cd ~/Local\ Sites/managexr/app/public/wp-content/themes/managexr"
+alias p=phpunit
+alias pf='phpunit --filter '
