@@ -1,5 +1,5 @@
 #aliases
-alias myaliases='vim ~/.oh-my-zsh/custom/aliases.zsh'
+alias myaliases='vim ~/.dotfiles/aliases.zsh'
 
 alias code='cd ~/code'
 
