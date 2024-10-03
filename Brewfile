@@ -6,7 +6,7 @@
 # tap 'stripe/stripe-cli'
 
 # Binaries
-# brew 'awscli'
+brew 'awscli'
 # brew 'bash' # Latest Bash version
 # brew 'bat' # Used for spatie/visit
 # brew 'coreutils' # Those that come with macOS are outdated
@@ -36,7 +36,13 @@ brew 'svgo'
 # brew 'mysql'
 # brew 'node'
 # brew 'redis'
-# brew 'yarn'
+brew 'yarn'
+brew 'nvm'
+brew 'php'
+brew 'wp-cli'
+
+# Machine Learning
+# brew 'python'
 
 # Apps
 # cask '1password'
@@ -69,6 +75,13 @@ cask 'zoom'
 # cask 'zwift'
 cask 'sequel-pro'
 cask 'iterm2'
+cask 'lastpass'
+cask 'sourcetree'
+cask 'local'
+cask 'dropbox'
+cask 'steam'
+cask 'idrive'
+cask 'adobe-creative-cloud'
 
 # Quicklook
 # cask 'qlmarkdown'

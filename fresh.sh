@@ -26,6 +26,9 @@ brew update
 brew tap homebrew/bundle
 brew bundle --file ./Brewfile
 
+# Install node
+#nvm install node
+
 # Set default MySQL root password and auth type
 #mysql -u root -e "ALTER USER root@localhost IDENTIFIED WITH mysql_native_password BY 'password'; FLUSH PRIVILEGES;"
 
