@@ -26,6 +26,10 @@ brew update
 brew tap homebrew/bundle
 brew bundle --file ./Brewfile
 
+# Install Ruby
+rbenv init
+rbenv install 3.1.7
+
 # Install node
 #nvm install node
 

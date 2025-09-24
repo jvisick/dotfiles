@@ -43,3 +43,11 @@ export PATH="$(brew --prefix python)/libexec/bin:$PATH"
 # I've disabled this for now because I only use "ls" which is
 # referenced in my aliases.zsh file directly.
 # export PATH="$(brew --prefix coreutils)/libexec/gnubin:$PATH"
+
+# Percy/Cypress tests builds on Neo4j
+# https://www.broddin.be/fixing-the-chromium-binary-is-not-available-for-arm64/
+export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+export PUPPETEER_EXECUTABLE_PATH=`which chromium`
+
+# Added by Windsurf
+export PATH="/Users/joshuavisick/.codeium/windsurf/bin:$PATH"
